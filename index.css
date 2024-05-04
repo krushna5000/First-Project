@@ -1,0 +1,135 @@
+/* Style the header with a grey background and some padding */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'spartan',sans-serif;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  h1{
+    font-size: 50px;
+    line-height: 60;
+    color:#222;
+  }
+  h2{
+    font-size: 40px;
+    line-height: 50;
+    color:#222;
+  }
+  h4{
+    font-size: 20px;
+    color: #222;
+  }
+  h6{
+    font-weight: 700;
+    font-size: 12px;
+    font-style: bold;
+  }
+  #feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 80px;
+  }
+
+  #feature .fe-box{
+    width: 150px;
+    text-align: center;
+    padding: 25px 25px; 
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 2px;
+    margin: 15px 0;
+  }
+  #feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.3);
+  }
+ #feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px ;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+   
+  }
+  #feature .fe-box img{
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: rgb(56, 23, 1);
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    
+  }
+  #feature .fe-box:nth-child(1) h6{
+    background-color: rgb(242, 190, 184);
+  }
+  #feature .fe-box:nth-child(2) h6{
+    background-color: rgb(206, 223, 173);
+  }
+  #feature .fe-box:nth-child(3) h6{
+    background-color:rgb(244, 133, 152) ;
+  }
+  #feature .fe-box:nth-child(5) h6{
+    background-color:rgb(179, 179, 240) ;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 45px;
+    font-weight: bold;
+   
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: rgb(255, 30, 206);
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+
+  /* feture section */
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+
+  
+
+  
