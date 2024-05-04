@@ -46,6 +46,14 @@ form {
 .loginform{
   height: 60%
 }  
+<<<<<<< HEAD
+=======
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+>>>>>>> 4bc430bd7790ae01429c7293ebcf86532931adab
   
   /* Add padding to containers */
   .container {
