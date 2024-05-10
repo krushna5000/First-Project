@@ -1,62 +1,64 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Sign-Up</title>
-<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" type="text/css" href="Register.css">
-<style>
-body{
-background-image: url("mobile_backgroung1.jpg"); background-size: 1500px 1000px;;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
 </head>
-<h2 ></h2>
-<br><br><br><br><br><br><br>
-<div class="form">
-     <div id="">
-     
+<body>
+   
 
-       <h1>Customer Login</h1>
-<div class="col-6 d-flex justify-content-center align-items-center" >
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="name">
+                       </div>
+                       <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="email">
+                       </div>
+                       <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="password">
+                       </div>
+                       <button type="button">Submit</button>
+                       <p>Lost Password <a href="#">Click Here</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign up</button>
+                    <button type="button" id="signinBtn" class="disable">Sign in</button>
+                </div>
+              
+            </form>
+        </div>
+    </div>
+    <script>
+       let signupBtn =document.getElementById("signupBtn");
+       let signinBtn =document.getElementById("signinBtn");
+       let nameField =document.getElementById("nameField");
+       let title =document.getElementById("title");
 
-     <form  >
+       signinBtn.onclick=function(){
+          nameField.style.maxHeight="0";
+          title.innerHTML="Sign in";
+          signupBtn.classList.add("disable");
+          signinBtn.classList.remove("disable");
 
-     
-            
-       <div class="field-wrap">
-       
-         <input type="text" name="email" placeholder="Enter  email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required autocomplete="off" title="Enter valid email.eg:john@gmail.com"/>
-       </div>
-       
-         
-         
-           <div class="field-wrap">
-       
-         <input type="password" name="password" placeholder="Enter password"  required autocomplete="off"/>
-       </div>
-       
-    
-      
+       }
+       signupBtn.onclick=function(){
+          nameField.style.maxHeight="60px";
+          title.innerHTML="Sign up";
+          signupBtn.classList.remove("disable");
+          signinBtn.classList.add("disable");
 
-       <button type="submit" class="button button-block">Login</button>
-       <div>
- <a href="/FpPL">
- Forgot your password?
- </a>
- 
- </div>   
-         
-       
-
-       </form>
-       
-       
-     </div>
-
- 
-
+       }
+    </script>
 </body>
 </html>

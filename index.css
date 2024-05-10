@@ -33,6 +33,36 @@
     font-size: 12px;
     font-style: bold;
   }
+
+  #bold{
+    font-size: bold;
+  }
+  .section-1{
+    padding: 40px 80px;
+  }
+  .section-2{
+    margin: 40px 0;
+
+  }
+  .body{
+    width: 100%;
+  }
+   button.normal{
+  font-size: 10px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+   }
+
+
+
+
   #feature{
     display: flex;
     align-items: center;
@@ -90,6 +120,39 @@
   #feature .fe-box:nth-child(5) h6{
     background-color:rgb(179, 179, 240) ;
   }
+
+
+  #banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    background-image: url("img/banner.png");
+    background-size: covwer;
+    background-position: center;  
+  }
+  #banner h4{
+    color: #fff;
+    font-size: 16px;
+  }
+  #banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+  }
+  #banner button:hover{
+    background: #088178;
+    color:#fff ;
+  }
+ 
+  .colour{
+    color: red;
+  }
+  
+  
+  
   
   /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
   .header a.logo {
@@ -106,7 +169,7 @@
   
   /* Style the active/current link*/
   .header a.active {
-    background-color: rgb(255, 30, 206);
+    background-color:#ddd;
     color: white;
   }
   
@@ -114,6 +177,35 @@
   .header-right {
     float: right;
   }
+  #product1{
+    text-align:cente;
+}
+.pro-cont{
+    display: flex;
+    justify-content: center;
+}
+#product1 .pro {
+    width: 23%;
+    min-width :250px;
+    padding:10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor:pointer;
+    /* box-shadow: 20px 20px rgb(0, 0, 0.2); */
+    margin: 15px ;
+    transition: 0.2s ease;
+}
+
+ 
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
 
   /* feture section */
   
@@ -130,6 +222,107 @@
   }
 
 
+  @media (max-width:799px) {
+    .header {
+      position:fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 300px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      overflow: hidden;
+      background-color: #f1f1f1;
+      padding: 20px 10px;
+      position: sticky;
+      top: 0;
+      left: 0;
+      
+  }
+  }
+
+
+
+  /* Contect  Page*/
+  
+  #contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #contact-details .details{
+    width: 40px;
+   }
+   #contact-details .details span{
+    font-size: 12px;
+   }
+   #contact-details .details h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px;
+
+   }
+
+   #contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+   }
+  #contact-details .map{
+width: 55%;
+height: 100%;
+  }
+  #contact-details .map iframe{
+      width: 100%;
+      height: 100%;
+  }
+#contact-details .details{
+  width: 40%;
+}
+#contact-details .details li{
+  list-style: none;
+  display: flex;
+  padding:10px 0 ;
+}
+#contact-details .details li i{
+ font-size: 10px;
+ padding: 22px;
+}
+#contact-details .details li p{
+ margin: 0;
+ font-size: 10px;
+}
+#contact-details .details h2{
+  font-size: 26px;
+  line-height: 36px;
+  padding: 20px;
+}
+#contact-details .details h3{
+ font-size: 16px;
+ padding-bottom: 16px;
+
+}
+#contact-details .details span{
+  font-size: 12px;
+}
+
+
+/* About */
+#about-banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+  background-image: url("img/banner2.jpg");
+  background-size: covwer;
+  background-position: center;  
+}
+#about-banner h2{
+  color: #fff;
+}
   
 
   
